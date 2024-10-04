@@ -2,10 +2,9 @@
 //Funcion despedir
 
 
-let palabra = prompt("Introduzca una frase o palabra de desepedida");
-despedir(palabra);
 
-function despedir(a){
+function despedir(){
+    let a = "adios amigos "
     console.log(`${a}`);
 }
 
