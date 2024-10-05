@@ -11,16 +11,16 @@ function despedir(){
 //MultiplicarPorDos
 function MultiplicarPorDos(a){
 let res = a*2;
-console.log(`tu numero es, ${res}`);
+return res;
 }
 
 
 //esMayorDeEdad
 function esMayorDeEdad(edad){
     if(edad>=18){
-        console.log("Es mayor de edad");
+        return true;
         
-    }else{console.log("Es menor de edad");}
+    }else {return false;}
 
 }
 
@@ -28,12 +28,12 @@ function esMayorDeEdad(edad){
 //Multplicar
 function multplicar(a,b){
     res= a*b;
-    console.log(`El resultado es ${res}`);
+    return res;
 }
 
 //saludo personalizado
 function saludoPersonalizado(nombre,apellido){
-    console.log(`Hola ${nombre} ${apellido}`)
+    return console.log(`Hola ${nombre} ${apellido}`);
 
 }
 
@@ -59,13 +59,13 @@ function dividir(a,b){
 
 //funcion expression
 //mutiplicar
-let MultiplicarDos = function(a,b){
+let MultiplicarDOS = function(a,b){
     return a*b;
 }
 
 //saludar2
-let saludarDos = function(nombre){
-    console.log(`hola ${nombre}`)
+let saludar = function(nombre){
+    return console.log(`hola ${nombre}`);
 
 
 }
@@ -78,17 +78,23 @@ let esPar = function(a){
 }
 //funciones flecha
 //saludarFlecha
-let saludarFlecha = (nombre) => console.log(`Hola ${nombre}`);
+let saludarFlecha = (nombre) =>{return console.log(`Hola ${nombre}`);}
 
 //calcularArea
-let calculaArea = (radio) => 3.14 * radio**2;
+let calculaArea = (radio) => {return 3.14 * radio**2;}
+ //multiplicar flecha
+let  MultiplicarFlecha=(a,b) => {return a*b;}
+
+
+ 
+ 
 
 //recursividad
 //sumanaturales
 
-function sumanaturales(n){
+function suma(n){
     if(n<=1) {return 1;}
-    return n + sumanaturales(n-1);
+    return n + suma(n-1);
 }
 
  //fibonacci
@@ -108,25 +114,33 @@ function sumanaturales(n){
   return n * factorial(n-1)  
 }
 
+function potencia(base,exponente){
+    if(exponente===0){
+        return 1;
+    }
+    return base * potencia(base, exponente-1 );
+
+}
+
 
  
-module.exports ={
+module.exports = {
     despedir,
-    MultiplicarDos,
+    MultiplicarPorDos,
     esMayorDeEdad,
     multplicar,
     saludoPersonalizado,
     cacularPotencia,
     restar,
     dividir,
-    saludarDos,
+    MultiplicarDOS,
+    saludar,
     esPar,
     calculaArea,
-    sumanaturales,
+    suma,
     fibonacci,
     factorial,
-    cacularPotencia,
+    potencia,
     saludarFlecha,
-    MultiplicarPorDos,
-
-}
+    MultiplicarFlecha,
+};
