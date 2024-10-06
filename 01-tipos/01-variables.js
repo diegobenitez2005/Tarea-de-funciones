@@ -9,7 +9,7 @@ function despedir(){
 }
 
 //MultiplicarPorDos
-function MultiplicarPorDos(a){
+function multiplicarPorDos(a){
 let res = a*2;
 return res;
 }
@@ -59,7 +59,7 @@ function dividir(a,b){
 
 //funcion expression
 //mutiplicar
-let MultiplicarDOS = function(a,b){
+let multiplicarDOS = function(a,b){
     return a*b;
 }
 
@@ -83,7 +83,7 @@ let saludarFlecha = (nombre) =>{return console.log(`Hola ${nombre}`);}
 //calcularArea
 let calculaArea = (radio) => {return 3.14 * radio**2;}
  //multiplicar flecha
-let  MultiplicarFlecha=(a,b) => {return a*b;}
+let  multiplicarFlecha=(a,b) => {return a*b;}
 
 
  
@@ -126,14 +126,14 @@ function potencia(base,exponente){
  
 module.exports = {
     despedir,
-    MultiplicarPorDos,
+    multiplicarPorDos,
     esMayorDeEdad,
     multplicar,
     saludoPersonalizado,
     cacularPotencia,
     restar,
     dividir,
-    MultiplicarDOS,
+    multiplicarDOS,
     saludar,
     esPar,
     calculaArea,
@@ -142,5 +142,5 @@ module.exports = {
     factorial,
     potencia,
     saludarFlecha,
-    MultiplicarFlecha,
+    multiplicarFlecha,
 };
