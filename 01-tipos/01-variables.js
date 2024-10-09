@@ -26,19 +26,19 @@ function esMayorDeEdad(edad){
 
 //Parametros
 //Multplicar
-function multplicar(a,b){
+function multiplicar(a,b){
     res= a*b;
     return res;
 }
 
 //saludo personalizado
-function saludoPersonalizado(nombre,apellido){
+function saludarPersonalizado(nombre,apellido){
     return console.log(`Hola ${nombre} ${apellido}`);
 
 }
 
 //calcular potencias
-function cacularPotencia(x,n){
+function calcularPotencia(x,n){
     let resultado = x**n;
     
     return resultado;
@@ -65,7 +65,7 @@ let multiplicarDOS = function(a,b){
 
 //saludar2
 let saludar = function(nombre){
-    return console.log(`hola ${nombre}`);
+    return (`hola ${nombre}`);
 
 
 }
@@ -81,7 +81,7 @@ let esPar = function(a){
 let saludarFlecha = (nombre) =>{return console.log(`Hola ${nombre}`);}
 
 //calcularArea
-let calculaArea = (radio) => {return 3.14 * radio**2;}
+let calcularArea = (radio) => {return 3.14 * radio**2;}
  //multiplicar flecha
 let  multiplicarFlecha=(a,b) => {return a*b;}
 
@@ -128,15 +128,15 @@ module.exports = {
     despedir,
     multiplicarPorDos,
     esMayorDeEdad,
-    multplicar,
-    saludoPersonalizado,
-    cacularPotencia,
+    multiplicar,
+    saludarPersonalizado,
+    calcularPotencia,
     restar,
     dividir,
     multiplicarDOS,
     saludar,
     esPar,
-    calculaArea,
+    calcularArea,
     suma,
     fibonacci,
     factorial,
